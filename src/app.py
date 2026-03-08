@@ -10,7 +10,7 @@ st.title("Phishing URL Detector")
 # Load model only once when the app starts (@st.cache_resource)
 @st.cache_resource
 def load_model():
-    return joblib.load('phishing_model.pkl')
+    return joblib.load('src/phishing_model.pkl')
 
 model = load_model()
 
